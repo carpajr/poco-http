@@ -16,7 +16,7 @@ else()
 endif()
 
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-#conan_basic_setup()
+conan_basic_setup()
 
 add_executable(http http.cpp)
 target_link_libraries(http ${CONAN_LIBS})
